@@ -11,6 +11,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        factory(\App\Models\Menu::class, 50)->create();
+    }
+
+    protected function addUser()
+    {
+        factory(\App\Models\User::class)->create([
+            'name' => 'Noud X',
+            'email' => 'noud@oostpolder-online.nl',
+            'password' => 'Welkom01!',
+        ]);
     }
 }
