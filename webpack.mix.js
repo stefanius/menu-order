@@ -12,4 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    // .sass('resources/sass/themes/bulmaswatch/app.scss', 'public/css')
+    // .sass('resources/sass/themes/bulmaswatch/cerulean.scss', 'public/css/themes')
+    // .sass('resources/sass/themes/bulmaswatch/cosmo.scss', 'public/css/themes')
+    // .sass('resources/sass/themes/bulmaswatch/cyborg.scss', 'public/css/themes')
+    // .sass('resources/sass/themes/bulmaswatch/darkly.scss', 'public/css/themes')
+    // .sass('resources/sass/themes/bulmaswatch/default.scss', 'public/css/themes')
+    // .sass('resources/sass/themes/bulmaswatch/flatly.scss', 'public/css/themes')
+    .sass('resources/sass/themes/bulmaswatch/journal.scss', 'public/css/themes')
+    .sass('resources/sass/admin.scss', 'public/css');
+    // .sass('resources/sass/themes/bulmaswatch/lumen.scss', 'public/css/themes');
