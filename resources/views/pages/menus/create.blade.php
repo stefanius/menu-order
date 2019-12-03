@@ -54,68 +54,44 @@
 <!-- END NAV -->
 <div class="container">
     <div class="columns">
-        <div class="column is-3 ">
-            <aside class="menu is-hidden-mobile">
-                <p class="menu-label">
-                    General
-                </p>
-                <ul class="menu-list">
-                    <li><a class="is-active">Dashboard</a></li>
-                    <li><a>Customers</a></li>
-                    <li><a>Other</a></li>
-                </ul>
-                <p class="menu-label">
-                    Administration
-                </p>
-                <ul class="menu-list">
-                    <li><a>Team Settings</a></li>
-                    <li>
-                        <a>Manage Your Team</a>
-                        <ul>
-                            <li><a>Members</a></li>
-                            <li><a>Plugins</a></li>
-                            <li><a>Add a member</a></li>
-                            <li><a>Remove a member</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Invitations</a></li>
-                    <li><a>Cloud Storage Environment Settings</a></li>
-                    <li><a>Authentication</a></li>
-                    <li><a>Payments</a></li>
-                </ul>
-                <p class="menu-label">
-                    Transactions
-                </p>
-                <ul class="menu-list">
-                    <li><a>Payments</a></li>
-                    <li><a>Transfers</a></li>
-                    <li><a>Balance</a></li>
-                    <li><a>Reports</a></li>
-                </ul>
-            </aside>
+        <div class="column is-2 ">
         </div>
-        <div class="column is-9">
+        <div class="column is-10">
             <section class="hero is-info welcome is-small">
                 <div class="columns">
                     <div class="column is-12">
-                        Week {{ $week }} </br>
+                        Week {{ $week }}
                     </div>
                 </div>
             </section>
 
+            <div class="columns" style="height: 2em;">
+                <div class="column is-2">
+
+                </div>
+
+                <div class="column is-5">
+                    <p class="has-text-centered is-centered"><strong>Menu A</strong></p>
+                </div>
+
+                <div class="column is-5">
+                    <p class="has-text-centered is-centered"><strong>Menu B</strong></p>
+                </div>
+            </div>
+
             @for($i = 1; $i <6; $i++)
-                <div class="columns">
+                <div class="columns" style="height: 10em;">
                     <div class="column is-2">
                         <strong>{{ \Carbon\Carbon::now()->setISODate(2019, $week, $i)->format('l') }}</strong> </br>
                         <small>{{ \Carbon\Carbon::now()->setISODate(2019, $week, $i)->format('j F Y') }}</small>
                     </div>
 
                     <div class="column is-5">
-                        <textarea></textarea>
+                        <textarea class="textarea"></textarea>
                     </div>
 
                     <div class="column is-5">
-                        <textarea></textarea>
+                        <textarea class="textarea"></textarea>
                     </div>
                 </div>
             @endfor
